@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/base.css">
 
     <!-- Script link -->
-
+    <script src="scripts/base.js" defer></script>
 </head>
 
 <body>
@@ -30,9 +30,9 @@
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
-    <nav>
+    <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Final</a></li>
         </ul>
@@ -49,8 +49,10 @@
         </section>
 
         <section>
-            <h2>Student Photo</h2>
-            <img src="images/profile.jpg" alt="Yumeto's Photo">
+            <div class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Yumeto's Photo">
+            </div>
         </section>
 
         <section>
@@ -72,8 +74,12 @@
             <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.svg" alt="linkedin"></a>
             <a href="#"><img src="images/twitter-x.svg" alt="twitter-x"></a>
         </div>
-        <p>©<span id="currentyear"></span>⚽ Yumeto Kozuma ⚽ Japan</p>
-        <p id="lastModified"></p>
+
+        <div class="text">
+            <p>©<span id="currentyear"></span>⚽ Yumeto Kozuma ⚽ Japan</p>
+            <p id="lastModified"></p>
+        </div>
+        
     </footer>
 </body>
 

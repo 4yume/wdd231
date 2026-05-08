@@ -2,3 +2,129 @@ body{
     font-family: "Google Sans", sans-serif;
     font-weight: 400;
 }
+
+/********** header **********/
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    column-gap: 8px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: rgb(26, 24, 39);
+}
+
+.hamburger{
+    background: none;
+    color: rgb(26, 24, 39);
+    border: none;
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: '\00D7';
+}
+
+/********** navigation **********/
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 0, 0);
+}
+
+.navigation a{
+    display: block;
+    padding: 5px 10px;
+    border: solid 2px rgb(26, 24, 39);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navigation li.current{
+    background: #3e3b3b;
+}
+
+.navigation a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/********** main **********/
+main{
+    margin-left: 10px;
+    color: rgb(26, 24, 39);
+}
+
+h2{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+}
+
+section{
+    background: rgb(202, 199, 199);
+    color: rgb(26, 24, 39);
+    display: block;
+
+}
+
+section p{
+    padding: 0 8px 50px 10px;
+}
+
+.student-photo{
+    text-align: center;
+}
+
+.student-photo img{
+    margin-bottom: 15px;
+}
+
+
+/********** footer **********/
+footer{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.social img{
+    width: 44px;
+    height: auto;
+}
+
+.text{
+    background: rgb(202, 199, 199);
+    padding: 3px;
+    text-align: center;
+    color: rgb(26, 24, 39);
+}
