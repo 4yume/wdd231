@@ -1,0 +1,51 @@
+@media only screen and (min-width: 320px){
+    header, main, nav, footer{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header{
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a{
+        border: none;
+        padding: 4px 8px;
+        margin: 5px;
+    }
+
+    /********** main **********/
+    .together{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+    }
+
+    .together h2{
+        margin-top: 0;
+    }
+
+    .student-photo img{
+        padding: 0 10px;
+    }
+
+    section p {
+        padding: 0 8px 10px 10px;
+    }
+
+    /********** section "Certificate Course" **********/
+    
+}
