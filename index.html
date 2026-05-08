@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231</title>
+
+    <meta name="author" content="Yumeto Kozume">
+    <meta name="description"
+        content="This is a homepage about me. Shows who I am and my picture to introduce my self for classmate.">
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:opsz@17..18&display=swap" rel="stylesheet">
+
+    <!-- Styles link -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Script link -->
+
 </head>
+
 <body>
-    <h1>WDD 231 - Yumeto</h1>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Yumeto's Site</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Yumeto Kozume. I live in Osaka, Jpan. I love to listening to music, so I often to go concerts
+                by several musicians. I also love playing video game in my free time. There are still a lot I do not
+                understand about programming, but I am looking forward to learning with my classmates.</p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Yumeto's Photo">
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div id="certificate-course" class="certificate">
+
+            </div>
+            <div id="cour" class="course">
+                <p>WDD 130</p>
+                <p>WDD 131</p>
+                <p>WDD 231</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/"><img src="images/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href="#"><img src="images/twitter-x.svg" alt="twitter-x"></a>
+        </div>
+        <p>©<span id="currentyear"></span>⚽ Yumeto Kozuma ⚽ Japan</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
