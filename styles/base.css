@@ -58,7 +58,7 @@ header span{
 .navigation a{
     display: block;
     padding: 5px 10px;
-    border: solid 2px rgb(26, 24, 39);
+    /* border: solid 2px rgb(26, 24, 39); */
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
