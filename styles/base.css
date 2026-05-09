@@ -53,6 +53,7 @@ header span{
     padding: 0;
     margin: 0;
     background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .navigation a{
@@ -65,6 +66,7 @@ header span{
 
 .navigation li.current{
     background: #3e3b3b;
+    color: rgb(255, 255, 255);
 }
 
 .navigation li.current a {
