@@ -105,6 +105,53 @@ section p{
 }
 
 
+/********** section "Certificate Course" **********/
+
+.certificate{
+    background: rgb(255, 255, 255);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.buttons button{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: .5rem;
+    background: rgb(202, 199, 199);
+}
+
+#course{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#course div{
+    text-align: center;
+    padding: 8px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.completed{
+    background: rgb(255, 160, 65);
+}
+
+.not-completed{
+    background: rgb(202, 199, 199);
+}
+
+#credits{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
 /********** footer **********/
 footer{
     text-align: center;
