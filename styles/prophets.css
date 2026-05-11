@@ -1,0 +1,32 @@
+body{
+    font-family: "Google Sans" sans-serif;
+    font-weight: 400;
+}
+
+header, footer{
+    text-align: center;
+    padding: 1rem;
+}
+
+h1{
+    color: rgb(57, 57, 159);
+}
+
+#cards{
+    border: solid 1px rgb(149, 141, 141);
+    background: rgb(233, 231, 231);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5rem;
+    text-align: center;
+}
+
+section{
+    background: rgb(163, 189, 181);
+    border: solid 1px rgb(42, 156, 144);
+}
+
+section img{
+    margin-top: .8rem;
+}
