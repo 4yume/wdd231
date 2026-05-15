@@ -3,6 +3,7 @@
     --secondary-color: ;
     --background-color: rgba(27, 152, 189, 0.782);
     --accent-color: rgb(236, 220, 220);
+    --accent-color2: rgb(240, 206, 206);
     --heading-font: "Google Sans", sans-serif;
     --heading-weight: 400;
 }
@@ -84,6 +85,7 @@ header span{
 footer{
     background: var(--background-color);
     display: block;
+    text-align: center;
 }
 
 .contact{
@@ -110,4 +112,79 @@ footer{
 .information{
     display: block;
     padding: 15px 8px;
+}
+
+
+
+
+/*menu*/
+.menu{
+    margin: 1rem;
+    text-align: center;
+}
+
+.menu button{
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+}
+
+
+/* card */
+.card section{
+    text-align: center;
+    padding: 4px;
+    border: 1px solid var(--primary-color);
+    background: var(--accent-color);
+}
+
+.card img{
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.card a{
+    display: block;
+    margin-top: 1rem;
+}
+
+.card p:first-of-type{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+section:last-of-type {
+    margin-bottom: 1rem;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    align-items: center;
+}
+
+/*list views*/
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list img{
+    display: none;
+}
+
+.list section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.list section:nth-child(even){
+    background: var(--accent-color);
+}
+
+.list section:nth-child(odd){
+    background: var(--accent-color2);
 }

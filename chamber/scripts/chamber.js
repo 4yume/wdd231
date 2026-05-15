@@ -30,7 +30,7 @@ async function getMembers() {
 const displayMembers = (members) => {
     members.forEach((member) => {
         const card = document.createElement("section");
-        const name = document.createElement("h2");
+        const name = document.createElement("p");
         const address = document.createElement("p");
         const phone = document.createElement("p");
         const website = document.createElement("a");
@@ -78,6 +78,7 @@ gridbutton.addEventListener('click', () => {
     cards.classList.add('grid');
     cards.classList.remove('list');
 });
+
 
 listbutton.addEventListener('click', () => {
     cards.classList.add('list');
