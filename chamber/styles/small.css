@@ -1,5 +1,113 @@
 :root{
-    --primary-color: ;
+    --primary-color: rgb(22, 26, 54);
     --secondary-color: ;
-    --background-color: ;
+    --background-color: rgba(27, 152, 189, 0.782);
+    --accent-color: rgb(236, 220, 220);
+    --heading-font: "Google Sans", sans-serif;
+    --heading-weight: 400;
+}
+
+body{
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);
+}
+
+/*header*/
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    column-gap: 8px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+header span{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.hamburger{
+    background: none;
+    color: var(--primary-color);
+    border: none;
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: '\00D7';
+}
+
+/*navigation*/
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+    background: var(--background-color);
+}
+
+.navigation a{
+    display: block;
+    padding: .5rem .8rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navigation a:hover{
+    background: var(--accent-color);
+}
+
+
+
+
+
+/* footer */
+footer{
+    background: var(--background-color);
+    display: block;
+}
+
+.contact{
+    display: block;
+    padding: 15px 8px;
+}
+
+.contact span{
+    font-weight: bold;
+    font-size: large;
+}
+
+.site{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.site img{
+    width: 44px;
+    height: auto;
+}
+
+.information{
+    display: block;
+    padding: 15px 8px;
 }
