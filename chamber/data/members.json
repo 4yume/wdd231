@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Umbrella Corporation",
+        "addresses": "1 Spencer, Raccoon City, USA",
+        "phone": "000-111-2222",
+        "url": "umbrella.com",
+        "image": "umbrella.jpg",
+        "level": 3,
+        "industry": "Pharmaceutical & Biotechnology"
+    },
+    {
+        "name": "Blue Umbrella",
+        "addresses": "2 Recovery, Washingron D.C., USA",
+        "phone": "000-222-3333",
+        "url": "blueumbrella.com",
+        "image": "blueumbrella.webp",
+        "level": 2,
+        "industry": "Security & Biohazard Cleanup"
+    },
+    {
+        "name": "Tricell Inc.",
+        "addresses": "3 Savannah, Kijuju, West Africa",
+        "phone": "222-111-111",
+        "url": "tricel.com",
+        "image": "tricell.png",
+        "level": 3,
+        "industry": "Chemical & Pharmaceutical Research"
+    },
+    {
+        "name": "WilPharma Corporation",
+        "addresses": "4 Harvard, Boston, USA",
+        "phone": "000-333-4444",
+        "url": "wilpharma.com",
+        "image": "wilpharma.png",
+        "level": 2,
+        "industry": "Pharmaceutical Research" 
+    },
+    {
+        "name": "The Connections",
+        "addresses": "5 Hidden, New Orleans, USA",
+        "phone": "000-444-555",
+        "url": "connections.com",
+        "image": "connections.jpg",
+        "level": 1,
+        "industry": "Underground Biotech Network"
+    },
+    {
+        "name": "Neo Umbrella",
+        "addresses": "6 Lanshiang Tower, Lanshiang, China",
+        "phone": "00-111-222-333",
+        "url": "neoumbrella.com",
+        "image": "neoumbrella.jpg",
+        "level": 2,
+        "industry": "Biohazard Operations"
+    },
+    {
+        "name": "S.T.A.R.S",
+        "addresses": "7 Raccoon Police, Raccoon City, USA",
+        "phone": "000-555-6666",
+        "url": "stars.com",
+        "image": "starts.jpg",
+        "level": 1,
+        "industry": "Special Tactical & Rescue Services" 
+    }
+]
