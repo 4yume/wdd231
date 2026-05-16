@@ -51,8 +51,8 @@ const displayMembers = (members) => {
         image.setAttribute('src', `images/${member.image}`);
         image.setAttribute('alt', member.name);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', "340");
-        image.setAttribute('height', '440');
+        image.setAttribute('width', "200");
+        image.setAttribute('height', '150');
 
         //append the section with created elements
         card.appendChild(name);
