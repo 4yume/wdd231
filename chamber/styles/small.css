@@ -4,7 +4,7 @@
     --background-color: rgba(27, 152, 189, 0.782);
     --accent-color: rgb(236, 220, 220);
     --accent-color2: rgb(240, 206, 206);
-    --heading-font: "Google Sans", sans-serif;
+    --heading-font: "Roboto", sans-serif;
     --heading-weight: 400;
 }
 
@@ -135,12 +135,14 @@ footer{
     padding: 4px;
     border: 1px solid var(--primary-color);
     background: var(--accent-color);
+    min-height: 420px;
 }
 
 .card img{
     width: auto;
     height: 150px;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .card a{

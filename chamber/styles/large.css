@@ -1,0 +1,48 @@
+@media only screen and (min-width: 320px){
+    main{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 50px auto;
+    }
+
+    /*header span {
+        white-space: nowrap;
+    }
+    */
+
+    .hamburger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        border: none;
+        background: none;
+    }
+
+    .together{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: var(--background-color);
+        align-items: center;
+    }
+
+    
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
