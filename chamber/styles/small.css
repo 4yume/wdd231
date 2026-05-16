@@ -1,8 +1,9 @@
 :root{
     --primary-color: rgb(22, 26, 54);
+    --secondly-color: rgb(0, 0, 0);
     --background-color: rgba(27, 152, 189, 0.782);
-    --accent-color: rgb(236, 220, 220);
-    --accent-color2: rgb(240, 206, 206);
+    --accent-color: rgb(239, 216, 216);
+    --accent-color2: rgb(222, 182, 182);
     --heading-font: "Roboto", sans-serif;
     --heading-weight: 400;
 }
@@ -10,6 +11,10 @@
 body{
     font-family: var(--heading-font);
     font-weight: var(--heading-weight);
+}
+
+h1{
+    color: var(--primary-color);
 }
 
 /*header*/
@@ -30,7 +35,7 @@ header img{
 
 header span{
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: var(--secondly-color);
 }
 
 .hamburger{
@@ -61,7 +66,7 @@ header span{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    color: var(--primary-color);
+    color: var(--secondly-color);
     background: var(--background-color);
 }
 
@@ -69,7 +74,7 @@ header span{
     display: block;
     padding: .5rem .8rem;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondly-color);
 }
 
 .navigation a:hover{
@@ -85,6 +90,7 @@ footer{
     background: var(--background-color);
     display: block;
     text-align: center;
+    color: var(--secondly-color);
 }
 
 .contact{
@@ -147,6 +153,7 @@ footer{
 .card a{
     display: block;
     margin-top: 1rem;
+    color: var(--primary-color);
 }
 
 .card p:first-of-type{
