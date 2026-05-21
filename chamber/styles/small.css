@@ -6,6 +6,7 @@
     --accent-color2: rgb(222, 182, 182);
     --heading-font: "Roboto", sans-serif;
     --heading-weight: 400;
+    --link-color: rgb(255, 252, 252);
 }
 
 body{
@@ -196,4 +197,33 @@ section:last-of-type {
 
 .list section:nth-child(odd){
     background: var(--accent-color2);
+}
+
+
+
+/********* index.html *********/
+.hero img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero a{
+    position: absolute;
+    bottom: 40%;
+    right: 30%;
+
+    color: var(--link-color);
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.hero a:hover{
+    background: var(--accent-color);
+    color: var(--secondly-color);
 }
