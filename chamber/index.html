@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <!--script link-->
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,9 +63,31 @@
 
         <h1>Home</h1>
 
-        <section class="events">
-            <h2>Events</h2>
-        </section>
+        <div class="sec">
+            <section class="events">
+                <h2>Events</h2>
+                <article>
+                    <h3>Programming Netwoking Event</h3>
+                    <p>December 14, 2026</p>
+                    <p>Meet local programmers and web developers in Osaka. Build connections and learn about new opportunities in the technology industry.</p>
+                </article>
+            </section>
+
+            <section class="currentWeather">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="">
+                <div class="information">
+                    <p id="temp"></p>
+                    <p id="desc"></p>
+                    <p id="humidity"></p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+            </section>
+
+        </div>
     </main>
 
 
