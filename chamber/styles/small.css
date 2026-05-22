@@ -221,8 +221,8 @@ section:last-of-type,
     bottom: 40%;
     right: 30%;
 
-    color: var(--link-color);
-    background: rgb(12, 96, 122);
+    color: var(--secondly-color);
+    background: var(--link-color);
     padding: 1rem;
     border-radius: 10px;
     text-decoration: none;
