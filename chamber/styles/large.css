@@ -45,4 +45,22 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+
+    /****** index.html ******/
+    .sec{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+        padding-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .sec h2{
+        margin-top: 0;
+    }
+
+    .sec section{
+        height: 100%;
+    }
 }

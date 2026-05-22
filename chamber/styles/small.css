@@ -133,7 +133,8 @@ footer{
 
 
 /* card */
-.card section{
+.card section,
+#spotlight-container section{
     text-align: center;
     padding: 4px;
     border: 1px solid var(--primary-color);
@@ -141,42 +142,46 @@ footer{
     
 }
 
-.card img{
+.card img,
+#spotlight-container img{
     width: auto;
     height: auto;
     margin: 0 auto;
     object-fit: cover;
 }
 
-.card a{
+.card a,
+#spotlight-container a{
     display: block;
     margin-top: 1rem;
     color: var(--primary-color);
 }
 
-.card p:first-of-type{
+.card p:first-of-type,
+#spotlight-container p:first-of-type{
     font-weight: 800;
     font-size: 1.2rem;
 }
 
-section:last-of-type {
+section:last-of-type,
+#spotlight-container:last-of-type {
     margin-bottom: 1rem;
 }
 
 
-.grid{
+.grid, #spotlight-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     align-items: center;
 }
 
-.grid section{
+.grid section, #spotlight-container section{
     min-height: 420px;
 }
 
 /*list views*/
-.list {
+.list{
     display: flex;
     flex-direction: column;
 }
@@ -226,4 +231,68 @@ section:last-of-type {
 .hero a:hover{
     background: var(--accent-color);
     color: var(--secondly-color);
+}
+
+
+
+
+/**section**/
+h1, .spotlights{
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.sec{
+    margin: .5rem;
+    display: block;
+}
+
+.events, .currentWeather, .forecast{
+    display: block;
+    background: var(--accent-color);
+    text-align: center;
+    
+}
+
+.events h2, .currentWeather h2, .forecast h2{
+    background: var(--secondly-color);
+    color: var(--link-color);
+    padding: 5px;
+}
+
+.events article{
+    text-align: start;
+    padding: 0 0 5px 10px;
+}
+
+/*weather*/
+.displayWeather{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.displayWeather img{
+    width: 100%;
+    height: auto;
+}
+
+.information{
+    display: block;
+}
+#temp{
+    font-weight: bold;
+}
+
+/* forecast*/
+.forecast p{
+    text-align: start;
+    padding: 0 0 5px 10px;
+}
+.forecast span{
+    font-weight: bold;
+}
+
+#spotlight-container{
+    align-items: start;
 }
