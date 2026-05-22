@@ -222,7 +222,7 @@ section:last-of-type,
     right: 30%;
 
     color: var(--link-color);
-    background: var(--background-color);
+    background: rgb(12, 96, 122);
     padding: 1rem;
     border-radius: 10px;
     text-decoration: none;

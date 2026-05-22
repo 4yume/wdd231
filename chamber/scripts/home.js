@@ -57,7 +57,7 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     desc.innerHTML = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
     humidity.innerHTML = `Humidity: ${data.main.humidity}`;
 }
 
