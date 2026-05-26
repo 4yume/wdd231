@@ -115,6 +115,13 @@ function displayCourses(courseList) {
 
         card.innerHTML = `${course.subject} ${course.number}`;
 
+        
+
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         courseContainer.appendChild(card);
     });
 
@@ -154,6 +161,8 @@ document.querySelector('#wdd').addEventListener("click", () => {
 
 
 //dialog
+const courseDetails = document.querySelector('#course-details')
+
 function displayCourseDetails(course) {
     courseDetails.innerHTML = "";
     courseDetails.innerHTML = `
@@ -168,11 +177,10 @@ function displayCourseDetails(course) {
 
     courseDetails.showModal();
 
+    const closeModal = document.querySelector('#closeModal');
+
     closeModal.addEventListener("click", () => {
         courseDetails.close();
     });
 }
 
-courseDiv.addEventListener('click', () => {
-    displayCourseDetails(course);
-});
