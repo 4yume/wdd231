@@ -376,5 +376,5 @@ dialog{
     border-radius: 5px;
 }
 ::backdrop{
-    background: var(--secondly-color / 50%);
+    background-color: rgb(0 0 0 / 50%);
 }
