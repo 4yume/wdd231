@@ -207,6 +207,10 @@ section:last-of-type,
 
 
 /********* index.html *********/
+.hero{
+    position: relative;
+}
+
 .hero img{
     position: relative;
     width: 100%;
@@ -218,8 +222,9 @@ section:last-of-type,
 
 .hero a{
     position: absolute;
-    bottom: 40%;
-    right: 30%;
+    bottom: 10%;
+    right: 20%;
+    
 
     color: var(--secondly-color);
     background: var(--link-color);
