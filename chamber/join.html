@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory Page</title>
+
+    <meta name="author" content="Yumeto Kozuma">
+    <meta name="description"
+        content="This is a join page. The pupose is to apply to join the chamber of commerce through a membership application form.">
+
+    <!-- facicon link-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--FaceBook social media meta-->
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description" content="Facebook homepage for share. This is in the chamber of commerce page">
+    <meta property="og:image" content="https://4yume.github.io/wdd231/chamber/images/facebook.svg">
+    <meta property="og:url" content="https://4yume.github.io/wdd231/chamber/directory.html">
+
+    <!--style link-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!--script link-->
+    <script src="scripts/join.js" defer></script>
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="together">
+        <header>
+            <img src="images/balloon-heart.svg" alt="Site Logo" width="16" height="16">
+            <span>Osaka Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger">≣</button>
+        </header>
+
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+    <main>
+        <h1>Home</h1>
+
+        <form method="get" action="thankyou.html">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" title="Enter your first name" autocomplete="given-name" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" title="Enter your last name" autocomplete="family-name" required>
+
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" title="Enter your organizational title using letter, spaces, and hyphens only (minimum 7 characters)" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" title="Please enter a vaild email address" autocomplete="email" placeholder="example@email.com" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" title="Please enter your mobile phone number" autocomplete="tel" required>
+
+            <label for="organization">Organization:</label>
+            <input type="text" name="organization" id="organization" title="Please enter your organization's name" autocomplete="organization" required>
+
+            <label for="membershipLevel">Membership Level:</label>
+            <select name="membership" id="membership" required>
+                <option value="" disabled selected>Select a Membership Level</option>
+                <option value="np">NP Membership (Non profit organizations)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" title="Write down a organization's description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <button type="submit">Join</button>
+        </form> 
+
+        <section class="membership-cards">
+            <div class="np">
+                <p>Non Profit Membership Level</p>
+                <button type="button" id="openNpModal">Learn More</button>
+            </div>
+
+            <div class="bronze">
+                <p>Bronze Membership Level</p>
+                <button type="button" id="openBronzeModal">Learn More</button>
+            </div>
+
+            <div class="silver">
+                <p>Silver Membership Level</p>
+                <button type="button" id="openSilverModal">Learn More</button>
+            </div>
+
+            <div class="gold">
+                <p>Gold Membership Level</p>
+                <button type="button" id="openGoldModal">Learn More</button>
+            </div>
+        </section>
+
+        <dialog id="npModal">
+            <h2>None Profit Membership</h2>
+            <p>Cost: Free</p>
+            <ul>
+                <li>Business listing in the chamber directory</li>
+                <li>Access to community networking events</li>
+                <li>Volunteer and community outreach opportunities</li>
+                <li>Monthly chamber newsletter access</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership</h2>
+            <p>Cost: $50</p>
+            <ul>
+                <li>Everything in NP Membership level</li>
+                <li>Discounted chamber event tickets</li>
+                <li>Basic business training workshops</li>
+                <li>Social media business promotion twice a year</li>
+                <li>Networking opportunities with local businesses</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h2>Silver Membership</h2>
+            <p>Cost: $100</p>
+            <ul>
+                <li>Everything in Bronze Membership level</li>
+                <li>Spotlight advertising on the chamber home page</li>
+                <li>Priority access to chamber training events</li>
+                <li>Featured placement in the business directory</li>
+                <li>Quarterly business promotion opportunities</li>
+                <li>Additional event discounts</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h2>Gold Membership</h2>
+            <p>Cost: $200</p>
+            <ul>
+                <li>Everything in Silver Membership level</li>
+                <li>Premium homepage spotlight advertising</li>
+                <li>Exclusive VIP networking events</li>
+                <li>Monthly featured business promotion</li>
+                <li>Free admission to selected chamber events</li>
+                <li>Priority sponsorship opportunities</li>
+                <li>Leadership and business development training</li>
+            </ul>
+            <button type="button" class="closeModal">Close</button>
+        </dialog>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="contact">
+            <span>Osaka Chamger of Commerce</span>
+            <p>1-1 Sakai Osaka, Mail 888</p>
+            <p>info@osaka.org</p>
+            <p>(050)4444-8888</p>
+        </div>
+
+        <div class="site">
+            <img src="images/youtube.svg" alt="youtube logo">
+            <img src="images/linkedin.svg" alt="linkedin logo">
+            <img src="images/twitter-x.svg" alt="twitter-x logo">
+        </div>
+
+        <div class="information">
+            <p>WDD231 Class Project</p>
+            <p>Yumeto Kozuma</p>
+            <p>©<span id="currentyear"></span>Osaka Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
