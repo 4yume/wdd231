@@ -296,3 +296,80 @@ h1, .spotlights{
 #spotlight-container{
     align-items: start;
 }
+
+
+
+/***************Thank you page*****************/
+#result{
+    background: rgb(239, 222, 166);
+    color: var(--secondly-color);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(143, 95, 6);
+    border-radius: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    gap: 1rem;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label{
+    color: purple;
+    font-size: 1.2rem;
+}
+
+input, textarea, select{
+    border-left: 6px solid purple;
+    padding: 5px;
+}
+
+input:required, select:required{
+    border-left: 6px solid red;
+}
+
+form button{
+    background: purple;
+    color: var(--link-color);
+    margin: 10px 0;
+    max-width: 98%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*membership cards*/
+.membership-cards{
+    margin: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-cards h2{
+    margin-bottom: 0;
+}
+
+.np, .bronze, .silver, .gold{
+    background: var(--accent-color);
+    padding: 5px 1rem 1rem 1rem;
+    text-align: center;
+    border: 2px solid var(--secondly-color);
+    border-radius: 8px;
+}
+
+dialog{
+    color: var(--secondly-color);
+    background: var(--link-color);
+    border-radius: 5px;
+}
+::backdrop{
+    background: var(--secondly-color / 50%);
+}
