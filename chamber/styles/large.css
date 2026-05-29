@@ -63,4 +63,13 @@
     .sec section{
         height: 100%;
     }
+
+
+        /****** join.html ******/
+        .membership{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
 }

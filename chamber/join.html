@@ -56,86 +56,91 @@
 
 
     <main>
-        <h1>Home</h1>
+        <h1>Join</h1>
 
-        <form method="get" action="thankyou.html">
-            <div class="form-field">
-                <label for="firstName">First Name:</label>
-                <input type="text" name="firstName" id="firstName" title="Enter your first name" autocomplete="given-name" required>
+        <div class="membership">
+            <div class="form-container">
+                <h2>Membership Applicatioi Form</h2>
+                <form method="get" action="thankyou.html">
+                    <div class="form-field">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" title="Enter your first name" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title"
+                            title="Enter your organizational title using letter, spaces, and hyphens only (minimum 7 characters)"
+                            autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" title="Please enter a vaild email address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" title="Please enter your mobile phone number" autocomplete="tel" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="organization">Organization:</label>
+                        <input type="text" name="organization" id="organization" title="Please enter your organization's name"
+                            autocomplete="organization" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="membershipLevel">Membership Level:</label>
+                        <select name="membership" id="membership" required>
+                            <option value="" disabled selected>Select a Membership Level</option>
+                            <option value="np">NP Membership (Non profit organizations)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="description">Description:</label>
+                        <textarea name="description" id="description" title="Write down a organization's description"></textarea>
+                    </div>        
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <button type="submit">Join Our Chamber of Commerce</button>
+                </form> 
             </div>
 
-            <div class="form-field">
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" id="lastName" title="Enter your last name" autocomplete="family-name" required>
-            </div>
+            <section class="membership-cards">
+                <h2>Membership Level</h2>
+                <div class="np">
+                    <p>Non Profit Membership Level</p>
+                    <button type="button" id="openNpModal">Learn More</button>
+                </div>
 
-            <div class="form-field">
-                <label for="title">Title:</label>
-                <input type="text" name="title" id="title"
-                    title="Enter your organizational title using letter, spaces, and hyphens only (minimum 7 characters)"
-                    autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
-            </div>
+                <div class="bronze">
+                    <p>Bronze Membership Level</p>
+                    <button type="button" id="openBronzeModal">Learn More</button>
+                </div>
 
-            <div class="form-field">
-                <label for="email">Email Address:</label>
-                <input type="email" name="email" id="email" title="Please enter a vaild email address" autocomplete="email"
-                    placeholder="example@email.com" required>
-            </div>
+                <div class="silver">
+                    <p>Silver Membership Level</p>
+                    <button type="button" id="openSilverModal">Learn More</button>
+                </div>
 
-            <div class="form-field">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" title="Please enter your mobile phone number" autocomplete="tel" required>
-            </div>
-
-            <div class="form-field">
-                <label for="organization">Organization:</label>
-                <input type="text" name="organization" id="organization" title="Please enter your organization's name"
-                    autocomplete="organization" required>
-            </div>
-
-            <div class="form-field">
-                <label for="membershipLevel">Membership Level:</label>
-                <select name="membership" id="membership" required>
-                    <option value="" disabled selected>Select a Membership Level</option>
-                    <option value="np">NP Membership (Non profit organizations)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </div>
-
-            <div class="form-field">
-                <label for="description">Description:</label>
-                <textarea name="description" id="description" title="Write down a organization's description"></textarea>
-            </div>        
-
-            <input type="hidden" id="timestamp" name="timestamp" value="">
-
-            <button type="submit">Join Our Chamber of Commerce</button>
-        </form> 
-
-        <section class="membership-cards">
-            <h2>Membership Level</h2>
-            <div class="np">
-                <p>Non Profit Membership Level</p>
-                <button type="button" id="openNpModal">Learn More</button>
-            </div>
-
-            <div class="bronze">
-                <p>Bronze Membership Level</p>
-                <button type="button" id="openBronzeModal">Learn More</button>
-            </div>
-
-            <div class="silver">
-                <p>Silver Membership Level</p>
-                <button type="button" id="openSilverModal">Learn More</button>
-            </div>
-
-            <div class="gold">
-                <p>Gold Membership Level</p>
-                <button type="button" id="openGoldModal">Learn More</button>
-            </div>
-        </section>
+                <div class="gold">
+                    <p>Gold Membership Level</p>
+                    <button type="button" id="openGoldModal">Learn More</button>
+                </div>
+            </section>
+        </div>
 
         <dialog id="npModal">
             <h2>None Profit Membership</h2>
