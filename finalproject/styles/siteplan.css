@@ -1,7 +1,6 @@
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    background: ;
 }
 
 section{
@@ -17,4 +16,17 @@ section h1{
     background: #6c63ff;
     margin: 0;
     color: #000000;
+}
+
+.fig{
+    display: block;
+}
+
+.fig img{
+    max-width: 500px;
+}
+
+figure{
+    border: 3px solid black;
+    border-radius: 10px;
 }
