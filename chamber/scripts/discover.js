@@ -65,4 +65,4 @@ if (!lastVisit) {
         visitMessage.textContent = `You last visited ${daysBetween} ${daysBetween === 1 ? "day" : "days"} ago.`;
     }
 }   
-localStorage.setItem("lastVisit", today);
+localStorage.setItem("lastVisit", currentVisit);
