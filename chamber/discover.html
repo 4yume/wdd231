@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Home Page</title>
+    <title>Chamber Directory Page</title>
 
     <meta name="author" content="Yumeto Kozuma">
     <meta name="description"
-        content="This is a home page that welcomes the visitor with key information and invitations to engage with the organization.">
+        content="This is a directory page that provides a list of local business that belong to the chamber of commerce.">
 
     <!-- facicon link-->
     <link rel="icon" href="images/favicon.ico">
@@ -22,10 +22,11 @@
     <!--style link-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/midium.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <!--script link-->
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
 
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,10 +46,10 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
 
         </nav>
@@ -56,44 +57,10 @@
 
 
     <main>
-        <section class="hero">
-            <img src="images/doutonbori.webp" alt="Doutonbori in Osaka">
-            <a href="#" class="cta-btn">Become a Member</a>
-        </section>
+        <h1>Discover</h1>
+        <div id="visit-message"></div>
 
-        <h1>Home</h1>
-
-        <div class="sec">
-            <section class="events">
-                <h2>Events</h2>
-                <article>
-                    <h3>Programming Netwoking Event</h3>
-                    <p>December 14, 2026</p>
-                    <p>Meet local programmers and web developers in Osaka. Build connections and learn about new opportunities in the technology industry.</p>
-                </article>
-            </section>
-
-            <section class="currentWeather">
-                <h2>Current Weather</h2>
-                <div class="displayWeather">
-                    <img id="weather-icon" src="images/twitter-x.svg" alt="weather icon">
-                    <div class="weatherInfo">
-                        <p id="temp"></p>
-                        <p id="desc"></p>
-                        <p id="humidity"></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="forecast">
-                <h2>Weather Forecast</h2>
-                <div id="forecast-container"></div>
-            </section>
-        </div>
-
-        <section class="spotlights">
-            <div id="spotlight-container"></div>
-        </section>
+        <section class="discover-card"></section>
     </main>
 
 
@@ -104,21 +71,19 @@
             <p>info@osaka.org</p>
             <p>(050)4444-8888</p>
         </div>
-
+        
         <div class="site">
             <img src="images/youtube.svg" alt="youtube logo">
             <img src="images/linkedin.svg" alt="linkedin logo">
             <img src="images/twitter-x.svg" alt="twitter-x logo">
         </div>
-
+        
         <div class="information">
             <p>WDD231 Class Project</p>
             <p>Yumeto Kozuma</p>
             <p>©<span id="currentyear"></span>Osaka Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
-
-
     </footer>
 </body>
 

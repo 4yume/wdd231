@@ -1,0 +1,17 @@
+@media screen and (min-width: 641px){
+    
+
+    .discover-card article{
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas:
+            "name name"
+            "photo description"
+            "photo address"
+            "button button";
+    }
+
+    .discover-card img:hover{
+        box-shadow: 0 0 50px var(--secondly-color);
+    }
+}

@@ -393,3 +393,67 @@ dialog{
 ::backdrop{
     background-color: rgb(0 0 0 / 50%);
 }
+
+
+
+/************** discover ******************/
+.discover-card{
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.discover-card article{
+    border: 1px solid var(--secondly-color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button";
+}
+
+.discover-card h2{
+    grid-area: name;
+    margin: 1rem 10px;
+}
+
+.discover-card figure{
+    grid-area: photo;
+    margin: 0;
+}
+
+.discover-card img{
+    width: 100%;
+    height: auto;
+}
+
+.discover-card p{
+    grid-area: description;
+    margin: 1rem 10px;
+}
+
+.discover-card address{
+    grid-area: address;
+    margin: 1rem 10px;
+}
+
+.discover-card button{
+    grid-area: button;
+    margin: 1rem 10px;
+    background: var(--secondly-color);
+    color: var(--link-color);
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+/* message */
+#visit-message{
+    margin: 1rem;
+    padding: 5px;
+    font-size: 1.1rem;
+}
