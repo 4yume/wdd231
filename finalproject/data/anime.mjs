@@ -2,7 +2,7 @@ export const anime = [
     {
         "id": 1,
         "title": "One Piece",
-        "image": "",
+        "image": "onepeace.jpg",
         "genre": "Action, Adventure, Fantasy",
         "rating": 8.9,
         "status": "Ongoing",
@@ -11,7 +11,7 @@ export const anime = [
     {
         "id": 2,
         "title": "Blue Lock",
-        "image": "",
+        "image": "bluelock.jpg",
         "genre": "Sports, Drama",
         "rating": 8.2,
         "status": "Ongoing",
@@ -20,7 +20,7 @@ export const anime = [
     {
         "id": 3,
         "title": "Attack on Titan",
-        "image": "",
+        "image": "attacontitan.jpg",
         "genre": "Action, Dark Fantasy",
         "rating": 9.1,
         "status": "Completed",
@@ -29,7 +29,7 @@ export const anime = [
     {
         "id": 4,
         "title": "Demon Slayer",
-        "image": "",
+        "image": "kimetu.jpg",
         "genre": "Action, Supernatural",
         "rating": 8.7,
         "status": "Ongoing",
@@ -38,7 +38,7 @@ export const anime = [
     {
         "id": 5,
         "title": "Jujutsu Kaisen",
-        "image": "",
+        "image": "jujutu.jpg",
         "genre": "Action, Supernatural",
         "rating": 8.6,
         "status": "Ongoing",
@@ -47,7 +47,7 @@ export const anime = [
     {
         "id": 6,
         "title": "Naruto",
-        "image": "",
+        "image": "naruto.jpg",
         "genre": "Action, Adventure",
         "rating": 8.4,
         "status": "Completed",
@@ -56,7 +56,7 @@ export const anime = [
     {
         "id": 7,
         "title": "My Hero Academia",
-        "image": "",
+        "image": "hiroaka.jpg",
         "genre": "Action, Superhero",
         "rating": 8.3,
         "status": "Ongoing",
@@ -65,7 +65,7 @@ export const anime = [
     {
         "id": 8,
         "title": "Fullmetal Alchemist: Brotherhood",
-        "image": "",
+        "image": "hagaren.jpg",
         "genre": "Action, Fantasy",
         "rating": 9.2,
         "status": "Completed",
@@ -74,7 +74,7 @@ export const anime = [
     {
         "id": 9,
         "title": "Spy x Family",
-        "image": "",
+        "image": "spyfamily.jpg",
         "genre": "Comedy, Action",
         "rating": 8.5,
         "status": "Ongoing",
@@ -83,7 +83,7 @@ export const anime = [
     {
         "id": 10,
         "title": "Hunter x Hunter",
-        "image": "",
+        "image": "hunter.jpg",
         "genre": "Adventure, Fantasy",
         "rating": 9.0,
         "status": "Completed",
@@ -92,7 +92,7 @@ export const anime = [
     {
         "id": 11,
         "title": "Chainsaw Man",
-        "image": "",
+        "image": "chenso.jpg",
         "genre": "Action, Horror",
         "rating": 8.5,
         "status": "Ongoing",
@@ -101,7 +101,7 @@ export const anime = [
     {
         "id": 12,
         "title": "Tokyo Revengers",
-        "image": "",
+        "image": "torive.jpg",
         "genre": "Action, Drama",
         "rating": 8.0,
         "status": "Ongoing",
@@ -110,7 +110,7 @@ export const anime = [
     {
         "id": 13,
         "title": "Dragon Ball Z",
-        "image": "",
+        "image": "dragonball.jpg",
         "genre": "Action, Martial Arts",
         "rating": 8.8,
         "status": "Completed",
@@ -119,7 +119,7 @@ export const anime = [
     {
         "id": 14,
         "title": "Haikyuu!!",
-        "image": "",
+        "image": "haikyu.jpg",
         "genre": "Sports, Comedy, Drama",
         "rating": 8.7,
         "status": "Completed",
@@ -128,7 +128,7 @@ export const anime = [
     {
         "id": 15,
         "title": "KonoSuba",
-        "image": "",
+        "image": "konosuba.jpg",
         "genre": "Comedy, Fantasy, Adventure",
         "rating": 8.1,
         "status": "Completed",
