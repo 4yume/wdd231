@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #6c63ff;
+    --background-color: #f5f5f5;
+    --background-color2: #8d87f9;
+    --text-color: #000000;
+    --text-color2: #333333;
+}
+
+main {
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* header */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 0;
+
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+header span {
+    font-size: 1.4rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+/* navigation */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    background: var(--primary-color);
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    color: var(--text-color);
+    padding: .5rem 1rem;
+}
+
+.navigation a:hover {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+.navigation li.current {
+    background: var(--background-color2);
+}
+
+/* footer */
+footer {
+    background: var(--primary-color);
+    display: block;
+    text-align: center;
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 0;
+}
+
+.site {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.site img {
+    width: 44px;
+    height: auto;
+}
+
+/******** index.html ************/
+.sitedescription {
+    border: 3px solid var(--text-color);
+    margin: 10px 0;
+}
+
+.sitedescription p {
+    padding: 0 10px;
+}
+
+.card {
+    text-align: center;
+    background: var(--background-color);
+    color: var(--text-color2);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    margin: 1rem 2rem;
+
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "photo info"
+        "button button";
+
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    padding: 0 1rem 1rem;
+}
+
+.card img {
+    width: 150px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    grid-area: photo;
+}
+
+.card .info {
+    grid-area: info;
+    text-align: center;
+}
+
+.card h2 {
+    grid-area: title;
+}
+
+.card button {
+    grid-area: button;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background: var(--text-color);
+    color: var(--background-color);
+}

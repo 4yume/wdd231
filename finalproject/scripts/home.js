@@ -20,6 +20,39 @@ document.getElementById('currentyear').innerHTML = year;
 document.getElementById('lastModified').innerHTML = `Last Modification: ${document.lastModified}`;
 
 
+//anime card
+import { anime } from "../data/anime.mjs";
 //spotlight
 const spotlight = document.querySelector('#spotlight-container');
-const animeUrl = 'data/anime.mjs'
+
+function displaySpotlights() {
+    const selectedAnime = [];
+
+    while (selectedAnime.length < 3) {
+        const randomIndex = Math.floor(Math.random() * anime.length);
+        const randomAnime = anime[randomIndex];
+
+        if (!selectedAnime.includes(randomAnime)) {
+            selectedAnime.push(randomAnime);
+        }
+    }
+
+    selectedAnime.forEach(show => {
+        const card = document.createElement('section');
+        card.classList.add('card');
+
+        card.innerHTML = `
+        <img src="images/${show.image}" alt="${show.title}">
+        <h2>${show.title}</h2>
+        <div class="info">
+            <p><strong>Genre:</strong> ${show.genre}</p>
+            <p><strong>Rating:</strong> ☆${show.rating}</p>
+        </div>
+        <button>View Details</button>
+        `;
+
+        spotlight.appendChild(card);
+    });
+}
+
+displaySpotlights();
