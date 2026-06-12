@@ -24,6 +24,8 @@ document.getElementById('lastModified').innerHTML = `Last Modification: ${docume
 //import anime data
 import { anime } from "../data/anime.mjs";
 
+let selectedAnime = null;
+
 const animeContainer = document.querySelector('#anime-container');
 
 //filter button
@@ -53,6 +55,7 @@ const modalTitle = document.querySelector('#modal-title');
 const modalStatus = document.querySelector('#modal-status');
 const modalDescription = document.querySelector('#modal-description');
 
+const favoriteButton = document.querySelector('#favorite-btn');
 
 
 function displayAnime(animeList) {
@@ -76,19 +79,40 @@ function displayAnime(animeList) {
 
         detailsButton.addEventListener('click', () => {
 
+            selectedAnime = show;
+
             modalTitle.textContent = show.title;
             modalStatus.textContent = `Status: ${show.status}`;
             modalDescription.textContent = show.description;
 
             modal.showModal();
         });
-
-        closeModal.addEventListener('click', () => {
-            modal.close();
-        });
-
+    
         animeContainer.appendChild(card);
-    });
+});
+
+  
 }
+closeModal.addEventListener('click', () => {
+    modal.close();
+});
+    
+//add favorite
+favoriteButton.addEventListener('click', () => {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const alreadyFavorite = favorites.some(item => item.title === selectedAnime.title);
+
+    if (alreadyFavorite) {
+        alert(`${selectedAnime.title} is already in you favorites.`);
+    }
+    else {
+        favorites.push(selectedAnime);
+
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+
+        alert(`${selectedAnime.title} added to favorites!`);
+    }
+});
 
 displayAnime(anime);
