@@ -34,7 +34,7 @@ function displayFavorites() {
         card.classList.add("card");
 
         card.innerHTML = `
-        <img src="images/${show.image}" alt="${show.title}">
+        <img loading="lazy" src="images/${show.image}" alt="${show.title}">
         <h2>${show.title}</h2>
 
         <div class="info">
