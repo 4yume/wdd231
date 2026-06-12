@@ -150,17 +150,53 @@ footer {
     grid-area: title;
 }
 
-#spotlight-container{
+#spotlight-container, #anime-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    
 }
-/*.card button {
+
+
+
+
+/********** search.html ************/
+.filter-buttons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.filter-buttons button{
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#anime-container .card{
+    grid-template-areas: 
+    "title"
+    "photo"
+    "info"
+    "button";
+}
+
+.card button {
     grid-area: button;
     margin-top: 10px;
     font-size: 1.1rem;
+    padding: 10px;
     background: var(--text-color);
     color: var(--background-color);
+    align-self: center;
 }
-*/
+
+/* modal */
+dialog{
+    background: var(--background-color);
+    color: #333333;
+    width: 60%;
+}
+
+::backdrop{
+    background-color: rgb(166 162 241 / 50%);
+}

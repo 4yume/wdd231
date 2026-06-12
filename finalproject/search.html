@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <!-- script link -->
-    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/search.js"></script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,9 +63,15 @@
             <button>Drama</button>
         </section>
 
-        <section id="anime-container">
+        <section id="anime-container"></section>
 
-        </section>
+        <dialog id="anime-modal">
+            <button id="close-modal">X</button>
+
+            <h2 id="modal-title"></h2>
+            <p id="modal-status"></p>
+            <p id="modal-description"></p>
+        </dialog>
     </main>
 
     <footer>
