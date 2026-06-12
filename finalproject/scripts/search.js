@@ -22,11 +22,22 @@ document.getElementById('lastModified').innerHTML = `Last Modification: ${docume
 
 
 //import anime data
-import { anime } from "../data/anime.mjs";
+import { getAnime } from "./api.js";
+
 
 let selectedAnime = null;
 
 const animeContainer = document.querySelector('#anime-container');
+
+let animeList = [];
+
+async function loadAnime() {
+    animeList = await getAnime();
+
+    if (animeList) {
+        displayAnime(animeList);
+    }
+}
 
 //filter button
 const filterButtons = document.querySelectorAll('.filter-buttons button');
@@ -36,10 +47,10 @@ filterButtons.forEach(button => {
         const selectedGenre = button.textContent;
 
         if (selectedGenre === "All") {
-            displayAnime(anime);
+            displayAnime(animeList);
         }
         else {
-            const filteredAnime = anime.filter(show =>
+            const filteredAnime = animeList.filter(show =>
                 show.genre.includes(selectedGenre)
             );
             displayAnime(filteredAnime);
@@ -104,7 +115,7 @@ favoriteButton.addEventListener('click', () => {
     const alreadyFavorite = favorites.some(item => item.title === selectedAnime.title);
 
     if (alreadyFavorite) {
-        alert(`${selectedAnime.title} is already in you favorites.`);
+        alert(`${selectedAnime.title} is already in your favorites.`);
     }
     else {
         favorites.push(selectedAnime);
@@ -115,4 +126,5 @@ favoriteButton.addEventListener('click', () => {
     }
 });
 
-displayAnime(anime);
+
+loadAnime();

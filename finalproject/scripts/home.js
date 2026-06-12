@@ -21,16 +21,24 @@ document.getElementById('lastModified').innerHTML = `Last Modification: ${docume
 
 
 //anime card
-import { anime } from "../data/anime.mjs";
+import { getAnime } from "./api.js";
 //spotlight
 const spotlight = document.querySelector('#spotlight-container');
 
-function displaySpotlights() {
+async function loadSpotlights() {
+    const animeList = await getAnime();
+
+    if (animeList) {
+        displaySpotlights(animeList);
+    }
+}
+
+function displaySpotlights(animeList) {
     const selectedAnime = [];
 
     while (selectedAnime.length < 3) {
-        const randomIndex = Math.floor(Math.random() * anime.length);
-        const randomAnime = anime[randomIndex];
+        const randomIndex = Math.floor(Math.random() * animeList.length);
+        const randomAnime = animeList[randomIndex];
 
         if (!selectedAnime.includes(randomAnime)) {
             selectedAnime.push(randomAnime);
@@ -54,4 +62,4 @@ function displaySpotlights() {
     });
 }
 
-displaySpotlights();
+loadSpotlights();
