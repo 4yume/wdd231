@@ -7,8 +7,7 @@
     <title>Final Project Home Page</title>
 
     <meta name="author" content="Yumeto Kozuma">
-    <meta name="description"
-        content="This is a favorite page. Users can see the anime that added in your favorite.">
+    <meta name="description" content="This is a favorite page. Users can see the anime that added in your favorite.">
 
     <!-- favicon link -->
     <link rel="icon" href="images/favicon.ico">
@@ -45,19 +44,50 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li class="current"><a href="favorite.html">Favorite</a></li>
-                <li><a href="survey.html">Survey</a></li>
+                <li><a href="favorite.html">Favorite</a></li>
+                <li class="current"><a href="survey.html">Survey</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
-        <section class="favorite-title">
-            <h1>My Favorite Anime</h1>
-            <p>Your saved collection of favorite anime.</p>
-        </section>
-        
-        <section id="favorite-container"></section>
+        <h1>Anime Survey</h1>
+
+        <form method="get" action="thanks.html">
+            <div class="form-field">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="anime">Favorite Anime: </label>
+                <input type="text" name="anime" id="anime" required>
+            </div>
+
+            <div class="form-field">
+                <label for="genre">Favorite Genre: </label>
+                <select name="genre" id="genre" required>
+                    <option value="" disabled selected>Select a favorite genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventrue</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Sports">Sports</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="comment">Comments: </label>
+                <textarea name="comment" id="comment" ></textarea>
+            </div>
+
+            <button type="submit">Submit Survey</button>
+        </form>
     </main>
 
     <footer>

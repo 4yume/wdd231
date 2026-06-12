@@ -4,6 +4,7 @@
     --background-color2: #c0bdf5;
     --text-color: #000000;
     --text-color2: #333333;
+    --border-color: #ff0000;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -232,4 +233,47 @@ dialog{
     "info"
     "remove"
     ;
+}
+
+
+
+/********** survey.html ***********/
+form{
+    margin: 0 10px;
+    gap: 1rem;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label{
+    font-size: 1.2rem;
+    color: var(--text-color2);
+}
+
+input:required,
+select:required{
+    border-left: 10px solid var(--border-color);
+}
+
+input,
+textarea,
+select{
+    padding: 8px;
+}
+
+textarea{
+    border-left: 10px solid var(--background-color2);
+}
+
+form button{
+    margin: 10px;
+    padding: 1rem;
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: var(--text-color);
+    color: var(--background-color);
 }
