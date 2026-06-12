@@ -1,9 +1,13 @@
 :root {
-    --primary-color: #6c63ff;
+    --primary-color: #a6a2f1;
     --background-color: #f5f5f5;
-    --background-color2: #8d87f9;
+    --background-color2: #c0bdf5;
     --text-color: #000000;
     --text-color2: #333333;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 main {
@@ -23,6 +27,8 @@ header {
 
     background: var(--primary-color);
     color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 header img {
@@ -64,6 +70,9 @@ header span {
     display: block;
     color: var(--text-color);
     padding: .5rem 1rem;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .navigation a:hover {
@@ -116,20 +125,20 @@ footer {
 
     display: grid;
     grid-template-areas:
-        "title title"
-        "photo info"
-        "button button";
-
-    grid-template-columns: 160px 1fr;
+        "title"
+        "photo"
+        "info";
     align-items: center;
     padding: 0 1rem 1rem;
 }
 
 .card img {
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     aspect-ratio: 2 / 3;
     object-fit: cover;
     grid-area: photo;
+    margin: 0 auto;
 }
 
 .card .info {
@@ -141,10 +150,17 @@ footer {
     grid-area: title;
 }
 
-.card button {
+#spotlight-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    
+}
+/*.card button {
     grid-area: button;
     margin-top: 10px;
     font-size: 1.1rem;
     background: var(--text-color);
     color: var(--background-color);
 }
+*/

@@ -1,0 +1,44 @@
+@media(min-width: 800px){
+    main{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 50px auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        border: none;
+        background: none;
+    }
+
+    .together{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 10px 0;
+        background: var(--primary-color);
+        align-items: center;
+    }
+
+    .card{
+        grid-template-areas: 
+        "title title"
+        "photo info";
+        grid-template-columns: 180px 1fr;
+        align-items: center;
+    }
+}

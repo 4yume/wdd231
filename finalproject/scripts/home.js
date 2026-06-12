@@ -48,7 +48,6 @@ function displaySpotlights() {
             <p><strong>Genre:</strong> ${show.genre}</p>
             <p><strong>Rating:</strong> ☆${show.rating}</p>
         </div>
-        <button>View Details</button>
         `;
 
         spotlight.appendChild(card);
