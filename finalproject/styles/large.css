@@ -48,4 +48,12 @@
             "photo info"
             "button button";
     }
+
+    #favorite-container .card {
+        grid-template-areas:
+            "title title"
+            "photo info"
+            "remove remove"
+        ;
+    }
 }
