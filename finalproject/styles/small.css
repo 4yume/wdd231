@@ -277,3 +277,13 @@ form button{
     background: var(--text-color);
     color: var(--background-color);
 }
+
+
+
+/****** thanks page *******/
+#result{
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 8px 1rem;
+}
