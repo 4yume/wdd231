@@ -26,7 +26,7 @@ const favoriteContainer = document.querySelector('#favorite-container');
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
 function displayFavorites() {
-    favoriteContainer.innerHTML = "";
+    
 
     favorites.forEach(show => {
         const card = document.createElement("section");
