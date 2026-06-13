@@ -287,3 +287,14 @@ form button{
     font-size: 1.2rem;
     padding: 8px 1rem;
 }
+
+
+/** footer ***/
+footer ul{
+     list-style-type: none;
+}
+
+footer a{
+    font-family: "Poppins", sans-serif;
+        font-weight: 400;
+}
