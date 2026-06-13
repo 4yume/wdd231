@@ -282,10 +282,11 @@ form button{
 
 /****** thanks page *******/
 #result{
-    background: var(--primary-color);
-    color: var(--text-color);
+    background: var(--background-color);
+    color: var(--text-color2);
     font-size: 1.2rem;
     padding: 8px 1rem;
+    margin: 1rem;
 }
 
 

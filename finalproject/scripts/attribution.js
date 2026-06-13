@@ -1,17 +1,3 @@
-const navbutton = document.querySelector('#ham-btn');
-const navbar = document.querySelector('#nav-bar');
-
-navbutton.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-
-    if (navbar.classList.contains("show")) {
-        navbutton.textContent = "X";
-    }
-    else {
-        navbutton.textContent = "≣";
-    }
-});
-
 /* date */
 const today = new Date();
 const year = today.getFullYear();
